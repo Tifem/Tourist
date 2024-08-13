@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.package-section{
+    padding: 65px 124px;
+   
+}
+
+.package-text{
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.package-text h1{
+    color:#2c3e50;
+    font-size: 40px;
+    font-family: 'Nunito';
+    font-weight:bold;
+}
+
+
+.package-text h6{
+    color: #86b817;
+    font-size: 1rem;
+    font-family: 'Nunito';
+}
+
+
+
+.package-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.125rem;
+    
+}
+
+.package-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.p-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-left: 1px solid rgb(213, 201, 201);
+    border-right: 1px solid rgb(213, 201, 201);
+    border-bottom: 1px solid rgb(213, 201, 201);
+    border-top: none;
+
+   
+}
+
+.first-icon, .second-icon,.third-icon{
+    padding: 5px 30px;
+}
+
+
+.package-box{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+}
+
+.pp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 1.5rem;
+    gap: .125rem;
+}
+
+.pp h3{
+    color: #2c3e50;
+    font-size: 2rem;
+    font-family: 'Nunito';
+    font-weight: 800;
+}
+
+.pp p{
+    text-align: center;
+    font-family: 'Nunito';
+    font-size: 13px;
+
+}
+
+.star-icon{
+   color: #86b817;
+    
+}
+
+.package-btn{
+    padding-top: 10px;
+}
+
+.read-btn{
+    background-color: #86b817;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-family: 'Nunito';
+    font-family: .75rem;
+    border-radius:1rem 0px 0px 1rem ;
+}
+
+.read{
+    background-color: #86b817;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-family: 'Nunito';
+    font-family: .75rem;
+    border-radius:0px 1rem 1rem 0px ;
+    margin-left: 2px;
+
+}
+
+.package-banner{
+    background-image:linear-gradient(rgb(0, 0, 5,0.50), rgba(0, 0, 5, 0.50)), url(../assets/img/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    gap: 1rem;
+    /* margin-top: 5rem; */
+}
+
+.package-banner h1{
+    color: white;
+    font-family: 'Nunito';
+    font-size: 4rem;
+}
+
+
+.package-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.package-link a{
+    color: #86b817;
+}

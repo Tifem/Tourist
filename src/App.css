@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app{
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.nav-text{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.nav-text h1{
+    color: #86b817;
+    font-family: 'Nunito';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.location{
+    color: #86b817;
+    font-size: 2.5rem;
+}
+
+/* .links{
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    display: none;
+    min-width: 150px;
+
+    
+} */
+
+.droplink {
+    position: relative;
+    display: inline-block;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the dropdown below the droplink */
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.links a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #f1f1f1;
+}
+
+.droplink:hover .links {
+    display: block;
+}
+
+.navlinks a{
+    text-decoration: none;
+    /* color: white; */
+    font-size: 1rem;
+    color: black;
+
+    font-family: "Nunito", sans-serif; 
+
+}
+
+.navlinks a.active{
+    color: #86b817;
+}
+
+
+/* .droplink{
+    position: relative;
+    display: inline-block;
+
+} */
+
+/* .droplink:hover .links{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+} */
+
+.register{
+    padding: .75rem 1.75rem;
+    border-radius: 40px;
+    background-color: #86b817;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+.icon{
+    color:#86b817;
+    font-size: 2rem;
+}
+
+.pages{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu{
+    display: none;
+}
+
+.menu{
+    font-size: 2rem;
+    border: 3px solid gray;
+}
+
+@media(max-width:600px){
+
+.mobile{
+    display: none;
+}
+.menu{
+    display: block;
+}
+}
+
+/* Navbar.css */
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: 15px 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+/* Sticky navbar styles */
+.sticky {
+    position: fixed;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.sticky nav ul li a {
+    color: black;
+}

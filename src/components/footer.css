@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+a{
+    text-decoration: none;
+}
+
+.footer-section{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding:80px 65px 40px 65px ;
+    gap: 2rem;
+}
+
+.footer-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+}
+
+.footer-box h3{
+    padding-bottom: 1.5rem;
+    font-size: 1.125rem;
+    font-family: "Nunito", sans-serif;}
+
+.company a{
+    color: white;
+    padding: 6px 0px;
+    font-family: "Nunito", sans-serif;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: .50rem;
+}
+
+.company ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-box p{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;}
+
+.box-icon{
+    font-size: 1.125rem;
+}
+
+.gallery-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: .50rem;
+    align-items: center;
+}
+
+.gal{
+    border: 5px solid white;
+}
+
+.social-icon{
+    display: flex;
+    gap: .25rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%; 
+    border:2px solid #f0f0f0; 
+    transition: background-color 0.3s; 
+}
+
+.email-box{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 8px 12px;
+}
+
+.email{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.signBtn{
+    border: none;
+    background-color: #86b817;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 12px;
+}
+
+.ft-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.ft-bottom p{
+    font-size: .75rem;
+    font-family: "Nunito", sans-serif;
+}
+
+.ft-links{
+    display: flex;
+    gap: 1rem;
+    align-items:center;
+}
+

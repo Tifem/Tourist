@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.destination-section{
+    padding: 65px 124px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.destination-section h1{
+    font-family: "Nunito", sans-serif;
+    font-size: 40px;
+    padding-bottom: 2.5rem;
+    color: #2c3e50;
+}
+
+
+.destination-section h6{
+    color: #86b817;
+    font-family: "Nunito", sans-serif; 
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.destination-box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left{
+    position: relative;
+}
+
+.left .discount{
+    position: absolute;
+    top: 1rem;
+    background-color: white;
+    color: red;
+    left: 1rem;
+    padding: 5px 10px;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.left .country{
+    position: absolute;
+    right: 1rem;
+    top: 14rem;
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+    color: #86b817;
+    padding: 5px 10px;
+    font-weight: bold;
+
+
+}
+
+.dist{
+    position: absolute;
+    background-color: white;
+    top: 1.5rem;
+    left: 1rem;
+    font-family: "Nunito", sans-serif;
+    color: red;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.indo-dist{
+    position: absolute;
+    top: 1rem;
+    background-color: white;
+    color: red;
+    left: 1rem;
+    padding: 5px 10px;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.indo{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+    color: #86b817;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+
+.ma{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+    color: #86b817;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.destination{
+    display: flex;
+    gap: 1rem;
+    padding-top: 5px;
+    align-items: center;
+    position: relative;
+}
+
+.desti{
+    width: 100%;
+}
+
+.big-img{
+    width: 600px;
+}
+
+.bigg-img{
+    width: 840px;
+}
+
+.small-bg{
+    width: 414px;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
