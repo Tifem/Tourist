@@ -6,6 +6,37 @@ import './service.css'
 
 
 const ClientSection = () => {
+
+  const clientData = [
+    {
+      id: 1,
+      name: "Mary John",
+      image: teamOne,
+      country: "New York, USA",
+      text: "Lorem ipsum dolor sit amet consectetu adipisicing elit. Unde nulla quaerat ad non, autem soluta Lorem ipsum dolor sit amet .",
+    },
+    {
+      id: 2,
+      name: "Alex Sophia",
+      image: teamTwo,
+      country: "New York, USA",
+      text: "Lorem ipsum dolor sit amet consectetu adipisicing elit. Unde nulla quaerat ad non, autem soluta Lorem ipsum dolor sit amet .",
+    },
+    {
+      id: 3,
+      name: "John Doe",
+      image: teamThree,
+      country: "New York, USA",
+      text: "Lorem ipsum dolor sit amet consectetu adipisicing elit. Unde nulla quaerat ad non, autem soluta Lorem ipsum dolor sit amet .",
+    },
+    {
+      id: 4,
+      name: "Paul John",
+      image: teamThree,
+      country: "New York, USA",
+      text: "Lorem ipsum dolor sit amet consectetu adipisicing elit. Unde nulla quaerat ad non, autem soluta Lorem ipsum dolor sit amet .",
+    },
+  ];
   return (
     <>
         <div className="client-section">
@@ -27,15 +58,19 @@ const ClientSection = () => {
             <h1>Our Client Says!!!</h1>
 
             <div className='client-container'>
-                <div className='client-box'>
-                    <img src={teamOne} alt=""  className='team'/>
-                    <div className='client-text'>
-                    <h3>Mary John</h3>
-                    <span>New York, USA</span>
+                {clientData.map((client, index) =>(
+                  <div className="client-box" key={index}>
+                    <img src={client.image} alt="" className="team" />
+                    <div className="client-text">
+                      <h3>{client.name}</h3>
+                      <span>{client.country}</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetu adipisicing elit. Unde nulla quaerat ad non, autem soluta Lorem ipsum dolor sit amet .  </p>
-                </div>
-                <div className='client-box'>
+                    <p>
+                     {client.text}
+                    </p>
+                  </div>
+                ))}
+                {/* <div className='client-box'>
                   <img src={teamTwo} alt="" className='team'/>
                    <div className='client-text'>
                    <h3>Alex Sophia</h3>
@@ -58,7 +93,7 @@ const ClientSection = () => {
                   <span>New York, USA</span>
                   </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla quaerat ad non, autem soluta Lorem ipsum dolor sit amet .  </p>
-                </div>
+                </div> */}
                
             </div>
         </div>

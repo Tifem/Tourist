@@ -16,63 +16,121 @@ const PackageSection = () => {
         AOS.refresh();
 
       }, []);
+
+      const packageBox = [
+        {
+          id: 1,
+          country: "Thailand",
+          currency: `$149.00`,
+          days: "3 days",
+          user: "2 Person",
+          text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptatibus recusandae",
+          image: packageOne,
+        },
+        {
+          id: 2,
+          country: "Thailand",
+          currency: `$139.00`,
+          days: "3 days",
+          user: "2 Person",
+          text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptatibus recusandae",
+          image: packageTwo,
+        },
+        {
+          id: 3,
+          country: "Thailand",
+          currency: `$189.00`,
+          days: "3 days",
+          user: "2 Person",
+          text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptatibus recusandae",
+          image: packageThree,
+        },
+      ];
   return (
     <>
-    <div className="package-section">
+      <div className="package-section">
         <div className="package-text">
-            <div style={{display:'flex',gap:'13px',alignItems:'center'}}>
-                <div style={{display:'flex' ,gap:'6px',flexDirection:'column',alignItems:'end'}}>
-                    <div style={{width:'50px',height:'2px',background:'#86b817'}}></div>
-                    <div style={{width:'100px',height:'3px',background:'#86b817'}}></div>
-                </div>
-
-                  <h6>PACKAGES</h6>
-
-                <div style={{display:'flex' ,gap:'6px',flexDirection:'column',      alignItems:'start'}}>
-                        <div style={{width:'50px',height:'2px',background:'#86b817'}}></div>
-                        <div style={{width:'100px',height:'3px',background:'#86b817'}}></div>
-                    </div>
-
-
-                </div>   
-                     <h1>Awesome Packages</h1>
-             </div>
-
-         <div className="package-container" >
-            <div className='package-box' data-aos="fade-up" data-aos-duration="800">
-                <img src={packageOne} alt="" />
-                <div className='package-icon'>
-                    <div className='p-icon first-icon'>
-                    <FaLocationDot  className='star-icon'/>
-                    <p>Thailand</p>
-                    </div>
-                    <div className='p-icon second-icon'>
-                    <FaCalendarAlt className='star-icon'/>
-                    <p>3 days</p>
-                    </div>
-                    <div className='p-icon third-icon'>
-                    <FaUser className='star-icon' />
-                    <p>2 Person</p>
-                    </div>
-                </div>
-               <div className="pp">
-               
-                <h3>$149.00</h3>
-                <div className="package-star">
-                <FaStar className='star-icon'/>
-                <FaStar className='star-icon'/>
-                <FaStar className='star-icon'/>
-                <FaStar className='star-icon'/>
-                <FaStar className='star-icon'/>
-                </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus recusandae, </p>
-                <div className="package-btn">
-                    <button className='read-btn'>Read More</button>
-                    <button className='read '>Book Now</button>
-                </div>
-               </div>
+          <div style={{ display: "flex", gap: "13px", alignItems: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                gap: "6px",
+                flexDirection: "column",
+                alignItems: "end",
+              }}
+            >
+              <div
+                style={{ width: "50px", height: "2px", background: "#86b817" }}
+              ></div>
+              <div
+                style={{ width: "100px", height: "3px", background: "#86b817" }}
+              ></div>
             </div>
-            <div className='package-box' data-aos="fade-up" data-aos-duration="800">
+
+            <h6>PACKAGES</h6>
+
+            <div
+              style={{
+                display: "flex",
+                gap: "6px",
+                flexDirection: "column",
+                alignItems: "start",
+              }}
+            >
+              <div
+                style={{ width: "50px", height: "2px", background: "#86b817" }}
+              ></div>
+              <div
+                style={{ width: "100px", height: "3px", background: "#86b817" }}
+              ></div>
+            </div>
+          </div>
+          <h1>Awesome Packages</h1>
+        </div>
+
+        <div className="package-container">
+          {packageBox.map((client) => (
+            <div
+              className="package-box"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <img src={client.image} alt="" />
+              <div className="package-icon">
+                <div className="p-icon first-icon">
+                  <FaLocationDot className="star-icon" />
+                  <p>{client.country}</p>
+                </div>
+                <div className="p-icon second-icon">
+                  <FaCalendarAlt className="star-icon" />
+                  <p>{client.days}</p>
+                </div>
+                <div className="p-icon third-icon">
+                  <FaUser className="star-icon" />
+                  <p>{client.user}</p>
+                </div>
+              </div>
+              <div className="pp">
+                <h3>{client.currency}</h3>
+                <div className="package-star">
+                  <FaStar className="star-icon" />
+                  <FaStar className="star-icon" />
+                  <FaStar className="star-icon" />
+                  <FaStar className="star-icon" />
+                  <FaStar className="star-icon" />
+                </div>
+                <p>
+                 {client.text}
+                </p>
+                <div className="package-btn">
+                  <button className="read-btn">Read More</button>
+                  <button className="read ">Book Now</button>
+                </div>
+              </div>
+            </div>
+          ))}
+
+          {/* <div className='package-box' data-aos="fade-up" data-aos-duration="800">
                 <img src={packageTwo} alt="" />
                 <div className='package-icon'>
                     <div className='p-icon first-icon'>
@@ -137,11 +195,11 @@ const PackageSection = () => {
                     <button className='read'>Book Now</button>
                 </div>
                </div>
-            </div>        
-        </div>  
-    </div>
+            </div>         */}
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default PackageSection

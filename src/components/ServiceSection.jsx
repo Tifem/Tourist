@@ -16,6 +16,58 @@ const ServiceSection = () => {
         AOS.refresh();
 
       }, []);
+
+  const serviceData = [
+    {
+      id: 1,
+      icon: <FaGlobe className="service-icon" />,
+      name: "Worldwide Tours",
+      text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia siteos ducimus debitis laborum voluptatum",
+    },
+    {
+      id: 2,
+      icon: <FaHotel className="service-icon" />,
+      name: "Hotel Reservation",
+      text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia siteos ducimus debitis laborum voluptatum",
+    },
+    {
+      id: 3,
+      icon: <FaUser className="service-icon" />,
+      name: "Travel Guide",
+      text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia siteos ducimus debitis laborum voluptatum",
+    },
+    {
+      id: 4,
+      icon: <IoMdSettings className="service-icon" />,
+      name: "Event Management",
+      text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia siteos ducimus debitis laborum voluptatum",
+    },
+    {
+      id: 5,
+      icon: <FaGlobe className="service-icon" />,
+      name: "Worldwide Tours",
+      text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia siteos ducimus debitis laborum voluptatum",
+    },
+    {
+      id: 6,
+      icon: <IoHome className="service-icon" />,
+      name: "Hotel Reservation",
+      text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia siteos ducimus debitis laborum voluptatum",
+    },
+    {
+      id: 7,
+      icon: <FaUser className="service-icon" />,
+      name: "Travel Guide",
+      text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia siteos ducimus debitis laborum voluptatum",
+    },
+
+    {
+      id: 8,
+      icon: <IoMdSettings className="service-icon" />,
+      name: "Event Management",
+      text: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia siteos ducimus debitis laborum voluptatum",
+    },
+  ];    
   return (
     <>
       <div className="service-section">
@@ -57,20 +109,21 @@ const ServiceSection = () => {
 
         <h2>Our Services</h2>
         <div className="service-box">
-          <div
-            className="service"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="200"
-          >
-            <FaGlobe className="service-icon" />
-            <h3>Worldwide Tours</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia sit
-              eos ducimus debitis laborum voluptatum.{" "}
-            </p>
-          </div>
-          <div
+          {serviceData.map((serve) => (
+            <div
+              className="service"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+              key={serve.id}
+            >
+              {serve.icon}
+              <h3>{serve.name}</h3>
+              <p>{serve.text}</p>
+            </div>
+          ))}
+
+          {/* <div
             className="service"
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -167,7 +220,7 @@ const ServiceSection = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia sit
               eos ducimus debitis laborum voluptatum.{" "}
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
